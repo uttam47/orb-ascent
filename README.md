@@ -2,7 +2,7 @@
 
 **Orb Ascent** is a minimalist puzzle-platformer built in Unity, where the core mechanic revolves around guiding small orbs through cleverly designed levels toward a teleportation point. The game emphasizes spatial reasoning, environmental interaction, and momentum-based puzzles, all wrapped in a serene, atmospheric presentation.
 
-[![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.yourcompany.orbascent) <!-- Replace with actual Play Store URL -->
+[![Get it on Google Play](https://play.google.com/store/apps/details?id=com.analyticalapproach.dominance) <!-- Replace with actual Play Store URL -->
 
 ---
 
