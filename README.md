@@ -41,7 +41,7 @@ Assets/
 └── Scenes/             # Level and UI scenes
 ```
 
-##📈 Future Goals
+## 📈 Future Goals
 -📘 Tutorial System
 A dedicated in-game tutorial system to onboard new players and introduce key mechanics gradually.
 
