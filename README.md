@@ -39,3 +39,14 @@ Assets/
 ├── Art/                # Visual assets and animations
 ├── Audio/              # Sound effects and background music
 └── Scenes/             # Level and UI scenes
+```
+
+##📈 Future Goals
+-📘 Tutorial System
+A dedicated in-game tutorial system to onboard new players and introduce key mechanics gradually.
+
+-🧱 Expanded Level Set
+The current architecture includes internal level design tools, enabling faster and more structured creation of additional handcrafted levels.
+
+-🌌 Procedural Level Generation (Long-Term)
+Exploration of a replayable, procedurally-generated level mode to add variety and challenge beyond handcrafted content.
