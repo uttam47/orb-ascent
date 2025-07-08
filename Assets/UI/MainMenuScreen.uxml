@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GeneralTheme.uss?fileID=7433441132597879392&amp;guid=a89682b49095c134e89144e4c81c0609&amp;type=3#GeneralTheme" />
+    <ui:VisualElement name="GameUIScreen" class="GameUIScreenBg" style="flex-grow: 1; justify-content: center;">
+        <ui:VisualElement name="TitleShadow" style="top: -13px; left: 505px; justify-content: center; -unity-font: url(&apos;project://database/Assets/FontAsset/Matemasie-Regular.ttf?fileID=12800000&amp;guid=77d3a2ba1102a274392df6327cb28036&amp;type=3#Matemasie-Regular&apos;); position: absolute; -unity-font-definition: initial; font-size: 135px; -unity-font-style: bold; color: rgb(255, 255, 255);">
+            <ui:Label text="Orb Ascent" display-tooltip-when-elided="true" name="Title" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Title" style="top: -18px; left: 528px; justify-content: center; -unity-font: url(&apos;project://database/Assets/FontAsset/Matemasie-Regular.ttf?fileID=12800000&amp;guid=77d3a2ba1102a274392df6327cb28036&amp;type=3#Matemasie-Regular&apos;); position: absolute; -unity-font-definition: initial; font-size: 129px; -unity-font-style: bold; color: rgb(101, 101, 101);">
+            <ui:Label text="Orb Ascent" display-tooltip-when-elided="true" name="Title" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Content" style="flex-grow: 1;">
+            <ui:VisualElement name="ButtonContainer" style="flex-grow: 1; margin-left: 70px; margin-right: 70px;">
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; align-items: center; justify-content: center;">
+                    <ui:Button text="  Settings" display-tooltip-when-elided="true" name="SettingsButton" class="mainMenuButton" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                    <ui:Button text="Info" display-tooltip-when-elided="true" name="InfoButton" class="mainMenuButton" />
+                </ui:VisualElement>
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; align-items: center; justify-content: center;">
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; align-items: center; justify-content: center;">
+                    <ui:Button text="Quit" display-tooltip-when-elided="true" name="QuitButton" class="mainMenuButton" />
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                    <ui:Button text="Play" display-tooltip-when-elided="true" name="PlayButton" class="mainMenuButton" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button text="Credits" display-tooltip-when-elided="true" name="CreditsButton" class="mainMenuButton" style="position: absolute; width: 200px; height: 200px; font-size: 30px; top: 394px; left: -24px;" />
+    </ui:VisualElement>
+</ui:UXML>

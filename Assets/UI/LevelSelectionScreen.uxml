@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GeneralTheme.uss?fileID=7433441132597879392&amp;guid=a89682b49095c134e89144e4c81c0609&amp;type=3#GeneralTheme" />
+    <ui:VisualElement name="AllLevelsScreen" class="GameUIScreenBg" style="flex-grow: 1;">
+        <ui:Button text="Next" display-tooltip-when-elided="true" name="NextButton" style="top: 324px; left: 1660px; background-image: url(&apos;project://database/Assets/Textures/UI/Button.png?fileID=2800000&amp;guid=a8e30a1d29403fb4baf7a1193844f605&amp;type=3#Button&apos;); width: 280px; height: 280px; -unity-font-definition: initial; -unity-font: url(&apos;project://database/Assets/FontAsset/Matemasie-Regular.ttf?fileID=12800000&amp;guid=77d3a2ba1102a274392df6327cb28036&amp;type=3#Matemasie-Regular&apos;); font-size: 50px; position: absolute; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); background-color: rgba(0, 0, 0, 0);" />
+        <ui:Button text="Prev" display-tooltip-when-elided="true" name="PrevButton" style="position: absolute; width: 280px; height: 280px; top: 302px; left: -24px; background-image: url(&apos;project://database/Assets/Textures/UI/Button.png?fileID=2800000&amp;guid=a8e30a1d29403fb4baf7a1193844f605&amp;type=3#Button&apos;); background-color: rgba(0, 0, 0, 0); -unity-font-definition: initial; -unity-font: url(&apos;project://database/Assets/FontAsset/Matemasie-Regular.ttf?fileID=12800000&amp;guid=77d3a2ba1102a274392df6327cb28036&amp;type=3#Matemasie-Regular&apos;); font-size: 45px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+        <ui:Button display-tooltip-when-elided="true" view-data-key="CloseButton" name="CloseButton" style="width: 90px; height: 90px; position: absolute; top: 27px; left: 133px; background-color: rgb(255, 93, 93); border-top-left-radius: 45px; border-bottom-left-radius: 45px; border-top-right-radius: 45px; border-bottom-right-radius: 45px; color: rgb(255, 255, 255); justify-content: flex-start; font-size: 90px; -unity-font-style: bold;">
+            <ui:Label tabindex="-1" text="&lt;" display-tooltip-when-elided="true" name="BackButtonLabel" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 10px; padding-top: 0; padding-bottom: 15px; -unity-text-align: middle-center;" />
+        </ui:Button>
+        <ui:VisualElement name="Header" class="Header" style="height: 364px; justify-content: center; border-top-left-radius: 50px; border-bottom-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; top: -119px; left: 443px;">
+            <ui:Label tabindex="-1" text="Levels" display-tooltip-when-elided="true" style="justify-content: space-between; align-items: center;" />
+        </ui:VisualElement>
+        <ui:ScrollView style="position: absolute; height: 609px; width: 1464px; top: 213px; left: 233px;">
+            <ui:VisualElement name="Content" style="flex-grow: 1;">
+                <ui:VisualElement name="LevelBlock1" class="levelBlock" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                <ui:VisualElement name="LevelBlock2" class="levelBlock" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

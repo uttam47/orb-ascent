@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GeneralTheme.uss?fileID=7433441132597879392&amp;guid=a89682b49095c134e89144e4c81c0609&amp;type=3#GeneralTheme" />
+    <ui:VisualElement name="AllLevelsScreen" class="GameUIScreenBg" style="flex-grow: 1; -unity-font-style: normal;">
+        <ui:ScrollView name="Content" style="background-color: rgb(89, 89, 89); position: absolute; height: 804px; width: 1517px; top: 55px; left: 260px; border-left-width: 4px; border-right-width: 4px; border-top-width: 4px; border-bottom-width: 4px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; padding-left: 50px; padding-right: 50px; padding-top: 30px;">
+            <ui:Label tabindex="-1" text="1. To clear a level, make any of the Orb enter the teleport gate." display-tooltip-when-elided="true" name="instruction" class="instruction" />
+            <ui:Label tabindex="-1" text="2. Pulling joystick farther makes you move faster. " display-tooltip-when-elided="true" name="instruction" class="instruction" />
+            <ui:Label tabindex="-1" text="3.  To Jump farther, move faster." display-tooltip-when-elided="true" name="instruction" class="instruction" />
+            <ui:Label tabindex="-1" text="4. To place a Orb, click the place button on the left of the screen." display-tooltip-when-elided="true" name="instruction" class="instruction" />
+            <ui:Label tabindex="-1" text="5. Nearest Orb can be selected by just pressing the select button. " display-tooltip-when-elided="true" name="instruction" class="instruction" />
+            <ui:Label tabindex="-1" text="6. Any Orb can be selected by simply touching onto it. " display-tooltip-when-elided="true" name="instruction" class="instruction" />
+            <ui:Label tabindex="-1" text="7. Selection camera can be moved by dragging on screen. " display-tooltip-when-elided="true" name="instruction" class="instruction" />
+        </ui:ScrollView>
+        <ui:VisualElement name="Header" class="Header" style="height: 364px; justify-content: center; border-top-left-radius: 50px; border-bottom-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; top: -72px; left: -37px; width: 354px; background-image: url(&apos;project://database/Assets/Textures/UI/Button.png?fileID=21300000&amp;guid=a8e30a1d29403fb4baf7a1193844f605&amp;type=3#Button&apos;);">
+            <ui:Label tabindex="-1" text="Info" display-tooltip-when-elided="true" style="justify-content: space-between; align-items: center;" />
+        </ui:VisualElement>
+        <ui:Button display-tooltip-when-elided="true" view-data-key="CloseButton" name="CloseButton" style="width: 90px; height: 90px; position: absolute; top: 24px; left: 1799px; background-color: rgb(255, 93, 93); border-top-left-radius: 45px; border-bottom-left-radius: 45px; border-top-right-radius: 45px; border-bottom-right-radius: 45px; color: rgb(255, 255, 255); justify-content: flex-start; font-size: 90px; -unity-font-style: bold;">
+            <ui:Label tabindex="-1" text="X" display-tooltip-when-elided="true" name="BackButtonLabel" style="-unity-text-align: middle-center; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; font-size: 60px; -unity-font: url(&apos;project://database/Assets/FontAsset/Matemasie-Regular.ttf?fileID=12800000&amp;guid=77d3a2ba1102a274392df6327cb28036&amp;type=3#Matemasie-Regular&apos;); height: 66px;" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GeneralTheme.uss?fileID=7433441132597879392&amp;guid=a89682b49095c134e89144e4c81c0609&amp;type=3#GeneralTheme" />
+    <ui:VisualElement name="GameUIScreen" class="GameUIScreenBg" style="flex-grow: 1;">
+        <ui:VisualElement name="Header" class="Header" style="top: -123px; left: 510px; justify-content: center;">
+            <ui:Label text="Level Complete" display-tooltip-when-elided="true" name="LevelWonText" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ButtonContainer" style="flex-grow: 1;">
+            <ui:Button text="Next" display-tooltip-when-elided="true" name="NextButton" class="menuButton" style="top: 473px; left: 1244px;" />
+            <ui:Button text="Quit" display-tooltip-when-elided="true" name="QuitButton" class="menuButton" style="top: 461px; left: 420px;" />
+            <ui:Button text="Menu" display-tooltip-when-elided="true" name="MenuButton" class="menuButton" style="top: 180px; left: 1269px;" />
+            <ui:Button text="Replay" display-tooltip-when-elided="true" name="ReplayButton" class="menuButton" style="top: 190px; left: 407px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

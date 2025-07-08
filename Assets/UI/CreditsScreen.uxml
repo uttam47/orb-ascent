@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GeneralTheme.uss?fileID=7433441132597879392&amp;guid=a89682b49095c134e89144e4c81c0609&amp;type=3#GeneralTheme" />
+    <ui:VisualElement name="GameUIScreen" class="GameUIScreenBg" style="flex-grow: 1;">
+        <ui:VisualElement name="CreditsContent" style="flex-grow: 1; background-color: rgb(19, 19, 19); position: absolute; height: 648px; width: 1228px; top: 196px; left: 350px; border-left-color: rgb(152, 152, 152); border-right-color: rgb(152, 152, 152); border-top-color: rgb(152, 152, 152); border-bottom-color: rgb(152, 152, 152); border-left-width: 8px; border-right-width: 8px; border-top-width: 8px; border-bottom-width: 8px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; -unity-text-align: upper-left; align-items: center; justify-content: center;">
+            <ui:Label tabindex="-1" text="Designed and Developed by&#10;&#x9;- AnalyticalApproach" display-tooltip-when-elided="true" name="CreditsContent" style="-unity-font-definition: initial; -unity-font: url(&apos;project://database/Assets/FontAsset/Matemasie-Regular.ttf?fileID=12800000&amp;guid=77d3a2ba1102a274392df6327cb28036&amp;type=3#Matemasie-Regular&apos;); font-size: 70px; color: rgb(255, 255, 255); -unity-text-align: middle-center;" />
+            <ui:Label tabindex="-1" text="( Uttam Kushwah )" display-tooltip-when-elided="true" style="position: absolute; -unity-font-definition: initial; -unity-font: url(&apos;project://database/Assets/FontAsset/Matemasie-Regular.ttf?fileID=12800000&amp;guid=77d3a2ba1102a274392df6327cb28036&amp;type=3#Matemasie-Regular&apos;); font-size: 30px; color: rgb(255, 255, 255); top: 425px; left: 542px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Header" class="Header" style="margin-left: 20px; margin-right: 20px; margin-top: 20px; margin-bottom: 20px; top: -137px; left: 503px; justify-content: center;">
+            <ui:Label text="Thanks for Playing" display-tooltip-when-elided="true" name="HeaderTitle" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ButtonContainer" class="buttonContainer" style="flex-grow: 1;">
+            <ui:Button text="Home" display-tooltip-when-elided="true" name="MenuButton" class="menuButton" style="top: 717px; left: 1544px; -unity-background-image-tint-color: rgb(147, 147, 147); color: rgb(255, 255, 255);" />
+            <ui:Button text="Quit" display-tooltip-when-elided="true" name="QuitButton" class="menuButton" style="top: 702px; left: 98px; -unity-background-image-tint-color: rgb(147, 147, 147); color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Button text="X" display-tooltip-when-elided="true" name="CloseButton" style="width: 70px; height: -7px; border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; -unity-font-style: bold; font-size: 40px; color: rgb(255, 255, 255); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); background-color: rgb(255, 57, 57); position: absolute; top: 23px; left: 1812px;" />
+</ui:UXML>

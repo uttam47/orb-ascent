@@ -1,0 +1,75 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/GeneralTheme.uss?fileID=7433441132597879392&amp;guid=a89682b49095c134e89144e4c81c0609&amp;type=3#GeneralTheme" />
+    <ui:VisualElement name="GameUIScreen" class="GameUIScreenBg" style="flex-grow: 1;">
+        <ui:VisualElement name="Header" class="contentBlock" style="flex-grow: 0; background-color: rgba(17, 17, 17, 0.92); padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; height: 120px; flex-direction: row;">
+            <ui:Button text="Camera" display-tooltip-when-elided="true" name="CameraSettingsButton" class="settingsButton selectedItem" style="display: flex;" />
+            <ui:Button text="Audio" display-tooltip-when-elided="true" name="AudioSettingsButton" class="settingsButton" />
+            <ui:Button text="Theme" display-tooltip-when-elided="true" name="GameThemeButton" class="settingsButton" />
+            <ui:VisualElement name="padding" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            <ui:Button text="X" display-tooltip-when-elided="true" name="CloseButton" style="width: 70px; height: -7px; border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; -unity-font-style: bold; font-size: 40px; color: rgb(255, 255, 255); border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); background-color: rgb(255, 57, 57);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Settings" class="contentBlock">
+            <ui:VisualElement name="CameraSettings" class="settingsContentBlock" style="flex-grow: 1; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px; display: flex;">
+                <ui:VisualElement name="TPPCameraSettings" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                    <ui:Label tabindex="-1" text="Player Camera Settings:" display-tooltip-when-elided="true" name="TPPCameraSettingsLabel" class="menuHeaderFont" />
+                    <ui:VisualElement name="InvertYAxis" class="settingsBlock">
+                        <ui:Label tabindex="-1" text="Invert Y Axis:" display-tooltip-when-elided="true" name="InvertYAxisLabel" style="flex-grow: 1;" />
+                        <ui:Button display-tooltip-when-elided="true" name="InvertYAxisButton" class="toggleButton toggleButtonOn" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="InvertXAxis" class="settingsBlock">
+                        <ui:Label tabindex="-1" text="Invert X Axis:" display-tooltip-when-elided="true" name="InvertXAxisLabel" style="flex-grow: 1;" />
+                        <ui:Button display-tooltip-when-elided="true" name="InvertXAxisButton" class="toggleButton toggleButtonOn" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="SensitivityContainer" class="settingsBlock">
+                    <ui:Label tabindex="-1" text="Sensitivity :" display-tooltip-when-elided="true" name="SensitivityLabel" style="margin-left: 0; margin-right: 20px;" />
+                    <ui:VisualElement name="padding" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                        <ui:Slider picking-mode="Ignore" value="3" high-value="5" name="TPPCameraSensitivitySlider" low-value="1" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="TrackedCameraSettings" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                    <ui:Label tabindex="-1" text="Tracked Camera Settings:" display-tooltip-when-elided="true" name="TPPCameraSettingsLabel" class="menuHeaderFont" />
+                    <ui:VisualElement name="UseTouchForTrackedCams" class="settingsBlock">
+                        <ui:Label tabindex="-1" text="Control Type:" display-tooltip-when-elided="true" name="ControlTypeLabel" style="flex-grow: 1;" />
+                        <ui:VisualElement name="padding" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:EnumField type="UnityEngine.TextAlignment, UnityEngine.TextRenderingModule" value="Center" name="TrackCameraControlType" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="SensitivityContainer" class="settingsBlock">
+                        <ui:Label tabindex="-1" text="Sensitivity :" display-tooltip-when-elided="true" name="SensitivityLabel" style="margin-left: 0; margin-right: 20px;" />
+                        <ui:VisualElement name="Padding" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:Slider picking-mode="Ignore" value="20" high-value="30" name="TrackedCameraSensitivitySlider" low-value="10" style="font-size: 30px; flex-grow: 1;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="AudioSettings" class="settingsContentBlock" style="flex-grow: 1; display: none;">
+                <ui:Label tabindex="-1" text="Audio Settings:" display-tooltip-when-elided="true" name="AudioSettingsLabel" class="menuHeaderFont" />
+                <ui:VisualElement name="SensitivityContainer" class="settingsBlock">
+                    <ui:Label tabindex="-1" text="Master Volume" display-tooltip-when-elided="true" name="SensitivityLabel" style="font-size: 40px; margin-left: 10px; margin-right: 20px;" />
+                    <ui:VisualElement name="Padding" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                        <ui:Slider picking-mode="Ignore" value="3" high-value="1" name="MasterSliderVolume" low-value="0" style="font-size: 30px; flex-grow: 1;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="MuteSoundBlock" class="settingsBlock">
+                    <ui:Label tabindex="-1" text="Game Sound" display-tooltip-when-elided="true" name="GameSoundLabel" style="flex-grow: 1;" />
+                    <ui:Button display-tooltip-when-elided="true" name="GameSoundButton" class="toggleButton toggleButtonOn" />
+                </ui:VisualElement>
+                <ui:VisualElement name="MasterVolumenBlock" class="settingsBlock">
+                    <ui:Label tabindex="-1" text="Game Music" display-tooltip-when-elided="true" name="GameMusicLabel" style="flex-grow: 1;" />
+                    <ui:Button text="&#10;" display-tooltip-when-elided="true" name="GameMusicButton" class="toggleButton toggleButtonOn" />
+                </ui:VisualElement>
+                <ui:VisualElement name="MenuSoundBlock" class="settingsBlock">
+                    <ui:Label tabindex="-1" text="Menu Sound" display-tooltip-when-elided="true" name="MenuSoundLabel" style="flex-grow: 1;" />
+                    <ui:Button display-tooltip-when-elided="true" name="MenuSoundButton" class="toggleButton toggleButtonOn" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="GameThemeSettings" class="settingsContentBlock" style="flex-grow: 1; display: none;">
+                <ui:VisualElement name="ThemeContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: 662px;">
+                    <ui:Button display-tooltip-when-elided="true" name="LightThemeButton" class="themeButton" style="background-image: url(&quot;project://database/Assets/Textures/UI/Theme/LightTheme.png?fileID=21300000&amp;guid=0b53b57d9571e0244b72729b6b90a41b&amp;type=3#LightTheme&quot;);" />
+                    <ui:Button display-tooltip-when-elided="true" name="DarkThemeButton" class="themeButton" style="flex-grow: 1; width: 50%; background-image: url(&quot;project://database/Assets/Textures/UI/Theme/DarkTheme.png?fileID=2800000&amp;guid=61446aecbed732e47947841727b2d0ad&amp;type=3#DarkTheme&quot;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
