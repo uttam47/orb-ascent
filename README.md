@@ -4,7 +4,8 @@
 
 [![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.analyticalapproach.dominance)
 <!-- Replace with actual Play Store URL -->
-
+---
+## Note: The sole purpose of this repo is to showcase my personal skills in Unity(Software Design and Project Structuring). This repo doesn't intend to provide a complete build source for Orb Ascent. 
 ---
 
 ## 🎯 Features
